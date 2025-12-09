@@ -1,0 +1,166 @@
+<!-- Profil - Prabot Minimalis
+     Single-file HTML profile page
+     Deskripsi tema: prabot minimalis rumah tangga
+-->
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Profil - Signature style</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#1f2937;
+      --primary:#0f766e;
+      --gap:18px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--accent);line-height:1.45}
+    .container{max-width:1100px;margin:36px auto;padding:24px}
+
+    /* Header */
+    header{display:flex;gap:var(--gap);align-items:center}
+    .avatar{width:120px;height:120px;border-radius:12px;background:linear-gradient(180deg,#e6f7f5,#ffffff);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    .title{flex:1}
+    h1{margin:0;font-size:1.625rem}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    /* Card layout */
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:24px;margin-top:22px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+
+    /* About */
+    .about h2{margin:0 0 8px;font-size:1.15rem}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .tag{background:#eef7f6;color:var(--primary);padding:6px 10px;border-radius:999px;font-weight:600;font-size:0.85rem}
+
+    /* Features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    @media (max-width:600px){.features{grid-template-columns:repeat(2,1fr)}}
+    .feature{background:#fbfdfe;padding:12px;border-radius:10px;border:1px solid rgba(15,23,42,0.03);text-align:center}
+    .feature strong{display:block;font-size:0.95rem}
+    .feature small{color:var(--muted)}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+    @media (max-width:700px){.gallery{grid-template-columns:repeat(2,1fr)}}
+    .thumb{height:110px;border-radius:8px;overflow:hidden;background:linear-gradient(180deg,#f3f4f6,#ffffff);display:flex;align-items:center;justify-content:center;border:1px solid rgba(15,23,42,0.03)}
+    .thumb img{width:100%;height:100%;object-fit:cover}
+
+    /* Sidebar */
+    .sidebar .meta{display:flex;flex-direction:column;gap:10px}
+    .meta .item{display:flex;justify-content:space-between;align-items:center;padding:10px;background:#fbfbfc;border-radius:8px}
+    .cta{display:block;text-align:center;margin-top:14px;padding:10px 12px;border-radius:10px;background:var(--primary);color:white;text-decoration:none;font-weight:600}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:0.9rem}
+
+    /* small utilities */
+    .muted{color:var(--muted)}
+    .divider{height:1px;background:linear-gradient(90deg,transparent,#eef2f3,transparent);margin:16px 0;border-radius:2px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar card">
+        <!-- Ganti src dengan foto profil kalau ada -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2f1ISyYk-C9SXFpXk-cQ0BAlcGSxRPMxtnw&s" alt="Profil Prabot Minimalis">
+      </div>
+      <div class="title">
+        <h1>Signature Style — Profil Tema</h1>
+        <p class="lead">Desain dan koleksi prabot rumah tangga bertema minimalis: fungsional, estetis, dan hemat ruang.</p>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card about">
+        <h2>Tentang Tema "Signature Style"</h2>
+        <p class="muted">Tema prabot minimalis berfokus pada bentuk sederhana, palet warna netral, serta penggunaan ruang yang efisien. Produk dirancang untuk meningkatkan fungsi rumah sehari-hari sambil mempertahankan estetika yang tenang dan rapi.</p>
+
+        <div class="tags">
+          <span class="tag">Fungsional</span>
+          <span class="tag">Hemat Ruang</span>
+          <span class="tag">Material Berkualitas</span>
+          <span class="tag">Estetika Netral</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <h3 style="margin-top:0">Fitur Utama</h3>
+        <div class="features">
+          <div class="feature">
+            <strong>Desain Simpel</strong>
+            <small>Garis bersih, minim ornamen</small>
+          </div>
+          <div class="feature">
+            <strong>Multi-fungsi</strong>
+            <small>Contoh: meja + penyimpanan</small>
+          </div>
+          <div class="feature">
+            <strong>Ramah Ruang Kecil</strong>
+            <small>Solusi vertikal dan lipat</small>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <h3>Deskripsi Produk Singkat</h3>
+        <p class="muted">Setiap item dirancang untuk menangani kebutuhan sehari-hari: kursi ergonomis, rak modular, meja serbaguna, dan lemari kompak. Pilihan warna dominan: kayu muda, putih gading, abu-abu lembut, serta aksen hitam tipis untuk kontras.</p>
+
+        <h3 style="margin-top:14px">Galeri Contoh</h3>
+        <div class="gallery" aria-hidden="false">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1598300054165-2d32ae9f8a3d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Meja minimalis"></div>
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Rak dinding"></div>
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1505691723518-36a5b35b2e0d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Kursi kayu"></div>
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Ruang tamu minimalis"></div>
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Lemari kompak"></div>
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Meja serbaguna"></div>
+        </div>
+
+      </section>
+
+      <aside class="card sidebar">
+        <div class="meta">
+          <div class="item"><span>Designer</span><strong>Studio Rumah Minimal</strong></div>
+          <div class="item"><span>Lokasi</span><strong>Kisaran, Indonesia</strong></div>
+          <div class="item"><span>Koleksi</span><strong>24 Produk</strong></div>
+          <div class="item"><span>Harga Rata-rata</span><strong>Rp 250.000 - Rp 2.500.000</strong></div>
+        </div>
+
+        <a href="#contact" class="cta">Hubungi Kami</a>
+
+        <div class="divider"></div>
+
+        <h4 style="margin:0 0 8px">Spesifikasi Rekomendasi</h4>
+        <ul style="margin:0;padding-left:18px;color:var(--muted)">
+          <li>Material: Kayu lapis / MDF berlapis</li>
+          <li>Finishing: Water-based varnish</li>
+          <li>Warna: Netral & natural</li>
+          <li>Perawatan: Lap lembab, hindari sinar matahari langsung</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <h4 id="contact">Kontak</h4>
+        <p class="muted" style="margin:0 0 6px">Email: hello@signaturestyle.id</p>
+        <p class="muted" style="margin:0 0 6px">Telepon: +62 812-3456-7890</p>
+        <p class="muted" style="margin:0">Instagram: @signaturestyle55</p>
+      </aside>
+    </main>
+
+    <footer>
+      © Beby Aulia , SI 3G • Desain Web Lanjutan
+    </footer>
+  </div>
+</body>
+</html>
